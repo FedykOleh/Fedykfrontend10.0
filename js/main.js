@@ -1,0 +1,1 @@
+let helloTeacher = alert('Hello teacher')

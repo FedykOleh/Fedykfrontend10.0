@@ -6,33 +6,33 @@ class Human{
 }
 const mary = new Human({
     name: 'mary',
-    gender :27,
+    gender :"W",
 })
 
 const john = new Human({
     name: 'john',
-    gender :70,
+    gender :"M",
 })
 
 const ricardo = new Human({
     name: 'ricardo',
-    gender :8,
+    gender :"M",
 })
 const mike = new Human({
     name: 'mike',
-    gender :23,
+    gender :"M",
 })
 const lucy = new Human({
     name: 'lucy',
-    gender :78,
+    gender :"W",
 })
 const joe = new Human({
     name: 'joe',
-    gender :100,
+    gender :'M',
 })
 const lily = new Human({
     name: 'lily',
-    gender :18,
+    gender :'W',
 })
 
 class Flat{

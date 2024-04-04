@@ -1,0 +1,32 @@
+body{
+    display: flex;justify-content: center;align-items: center;}
+.wrapper{
+    border:1px solid red;
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;}
+.holder{
+    display: flex ;
+    gap:20px;
+    align-self: flex-start;}
+.button-save{
+    align-self: center;
+    padding: 15px 40px;
+    margin: 20px;
+    background: aqua;
+    border-radius: 5px;
+    cursor: pointer;}
+.table{display:none;}
+.table-td-class{border: 1px solid black;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #56433D;
+    border-bottom: 2px solid #56433D;
+    border-right: 2px solid #56433D;
+    width: 300px;}
+.table-tr-class{display: block;}

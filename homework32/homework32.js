@@ -5,11 +5,11 @@ function generateList(array){
         const li =document.createElement('li')
         if(Array.isArray(elem)){
             li.appendChild(generateList(elem))
-            }else{
-                li.textContent = elem
-            }
-            ulList.appendChild(li)
-        })
+        }else{
+            li.textContent = elem
+        }
+        ulList.appendChild(li)
+    })
      return document.body.appendChild(ulList) 
           
 }

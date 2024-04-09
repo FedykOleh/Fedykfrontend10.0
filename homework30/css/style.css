@@ -1,0 +1,113 @@
+*{box-sizing: border-box;}
+body{color: aliceblue;
+    background: linear-gradient(90deg, rgba(36,0,34,1) 11%, rgba(90,9,121,1) 52%, rgba(231,0,255,1) 100%);
+margin: 0;}
+.header{display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(90deg, rgba(36,0,31,1) 26%, rgba(121,9,17,1) 69%, rgba(255,0,0,1) 100%);
+}
+.h1{color: aliceblue ;}
+.main{
+/* height: 100% */
+padding: 50px;}
+.categories-header{margin: 0;
+    padding-bottom: 35px;
+}
+.span{cursor: pointer;}
+.categories-list{list-style: none;
+margin: 0;
+padding:0 ;
+display: flex;
+flex-direction: column;
+gap: 50px;
+}
+.categories-film-proposition{
+    position: absolute;
+    left: 100px;
+    top:0;
+    list-style: none;
+    padding: 0;
+    display: none;
+    flex-wrap :wrap ;
+    ;}
+.categories-li-item{padding-bottom:20px ;
+    position: relative;
+    padding-right: 10px ;
+    
+    
+}
+.img-class{width: 100px;
+border-radius: 5px;
+padding-bottom: 5px;
+}
+.btn-holder{
+    display: flex;
+    flex-direction: column;
+}
+.categories-film-item{display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+    background: brown;
+    gap: 10px;
+    width: min-content;
+    margin-left: 20px;
+}
+.more-information-button{
+    margin-top: 5px;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    cursor: pointer;
+}
+.information-holder{
+    display: none;
+    flex-direction: column;
+}
+.information-p{font-size: small;
+    text-align: center;
+    
+}
+.buy-button{
+cursor: pointer;
+ box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+ transition: 0.5s;
+ width: 100px;
+    align-self: center;
+    border-radius: 10px;
+    background: darkslateblue;
+    color: aliceblue;
+
+}
+form{
+    display: none;
+    justify-content: center;
+}
+.order-form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: linear-gradient(90deg, rgba(3,87,34,1) 15%, rgba(9,121,82,0.6502976190476191) 86%, rgba(0,255,196,1) 100%);
+    padding: 15px;
+    color: #00ffc4;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.typical-option{
+    display: flex;
+    justify-content: space-between;
+}
+.order-button{
+    align-self: center;
+    width: 30%;
+    background: red;
+    padding: 10px;
+    border-radius: 30%;
+    border: none;
+    cursor: pointer;
+    
+}

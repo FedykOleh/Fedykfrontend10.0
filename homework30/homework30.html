@@ -13,12 +13,12 @@
     <main class="main">
         <aside class="aside" id='aside'>
             <h2 class="categories-header">Categories</h2>
-            <ul class="categories-list">
+            <ul class="categories-list" id="categories-list">
                 <li class="categories-li-item" id='comedy'> Comedy
                     <ul class="categories-film-proposition">
                         <li class="categories-film-item">
                             <div class="btn-holder">
-                                <img class="img-class" src="img/There's_Something_About_Mary_POSTER.jpg" alt=""> There's Something About Mary
+                                <img class="img-class" src="images/There's_Something_About_Mary_POSTER.jpg" alt=""> There's Something About Mary
                             <button id="info-button" class="more-information-button" type="button"> More information ></button>
                             </div>
                             <div class="information-holder">
@@ -32,7 +32,7 @@
                         </li>
                         <li class="categories-film-item"> 
                             <div class="btn-holder">
-                                <img class="img-class" src="img/Undertaking_Betty.jpg" alt=""> Plots with a View 
+                                <img class="img-class" src="images/Undertaking_Betty.jpg" alt=""> Plots with a View 
                             <button class="more-information-button" type="button"> More information ></button>
                             </div>
                             <div class="information-holder">
@@ -46,7 +46,7 @@
                         </li>
                         <li class="categories-film-item">
                             <div class="btn-holder">
-                                <img class="img-class" src="img/Love_The_Coopers_Teaser.jpg" alt="">LOVE THE COOPERS
+                                <img class="img-class" src="images/Love_The_Coopers_Teaser.jpg" alt="">LOVE THE COOPERS
                                 <button class="more-information-button" type="button"> More information ></button>  
                             </div>
                             <div class="information-holder">
@@ -65,7 +65,7 @@
                     <ul class="categories-film-proposition">
                         <li class="categories-film-item">
                             <div class="btn-holder">
-                                <img class="img-class" src="img/images.jpg" alt="">Oppenheimer
+                                <img class="img-class" src="images/images.jpg" alt="">Oppenheimer
                                 <button class="more-information-button" type="button"> More information ></button>  
                             </div>
                             <div class="information-holder">
@@ -79,11 +79,11 @@
                         </li>
                         <li class="categories-film-item"> 
                             <div class="btn-holder">
-                                <img class="img-class" src="img/Everything_Everywhere_All_at_Once.jpg" alt="">Everything Everywhere All at Once
+                                <img class="img-class" src="images/Everything_Everywhere_All_at_Once.jpg" alt="">Everything Everywhere All at Once
                                 <button class="more-information-button" type="button"> More information ></button>  
                             </div>
                             <div class="information-holder">
-                                <p class="information-p">verything Everywhere All at Once is a 2022 American absurdist 
+                                <p class="information-p">Everything Everywhere All at Once is a 2022 American absurdist 
                                     comedy-drama film written and directed by Daniel Kwan and Daniel Scheinert,[a] who produced it 
                                     with Anthony and Joe Russo and Jonathan Wang. 
                                 </p>
@@ -92,7 +92,7 @@
                         </li>
                         <li class="categories-film-item">
                             <div class="btn-holder">
-                                <img class="img-class" src="img/CODA.jpeg" alt="">CODA
+                                <img class="img-class" src="images/CODA.jpeg" alt="">CODA
                                 <button class="more-information-button" type="button"> More information ></button>  
                             </div>
                             <div class="information-holder">
@@ -110,7 +110,7 @@
                     <ul class="categories-film-proposition">
                         <li class="categories-film-item">
                             <div class="btn-holder">
-                                <img class="img-class" src="img/Coco_(2017_film)_poster.jpg" alt="">Coco
+                                <img class="img-class" src="images/Coco_(2017_film)_poster.jpg" alt="">Coco
                                 <button class="more-information-button" type="button"> More information ></button>  
                             </div>
                             <div class="information-holder">
@@ -124,7 +124,7 @@
                         </li>
                         <li class="categories-film-item">
                             <div class="btn-holder">
-                                <img class="img-class" src="img/Inside_Out_(2015_film)_poster.jpg" alt="">Inside Out
+                                <img class="img-class" src="images/Inside_Out_(2015_film)_poster.jpg" alt="">Inside Out
                                 <button class="more-information-button" type="button"> More information ></button>  
                             </div>
                             <div class="information-holder">
@@ -137,7 +137,7 @@
                         </li>
                         <li class="categories-film-item">
                             <div class="btn-holder">
-                                <img class="img-class" src="img/Inside_Out_(2015_film)_poster.jpg" alt="">Finding Dory
+                                <img class="img-class" src="images/Finding_Dory.jpg" alt="">Finding Dory
                                 <button class="more-information-button" type="button"> More information ></button>  
                             </div>
                             <div class="information-holder">
@@ -188,11 +188,41 @@
                 </div>
                 <div class="count-products typical-option">
                     <label for="comment">Comment : </label>
-                    <textarea name="comment" id="comment" cols="30" rows="3"></textarea>
+                    <textarea name="comment" id="comment-input" cols="30" rows="3"></textarea>
                 </div>
                 <button class="order-button" id ='order-button'type="button">ORDER!</button>
             </div>
         </form>
+        <table id ='table'class="table">
+            <tr class="table-tr-class">
+                <td class="table-td-class">Ваше ім'я та прізвище:</td>
+                <td class="table-td-class table-value-cell" id = 'name-cell'></td>
+            </tr>
+            <tr class="table-tr-class">
+                <td class="table-td-class">Ваше місто </td>
+                <td  class="table-td-class table-value-cell" id = 'city-cell'></td>
+            </tr>
+            <tr class="table-tr-class">
+                <td class="table-td-class">Адреса доставки :  </td>
+                <td id = 'adress-cell' class="table-td-class table-value-cell"></td>
+            </tr>
+            <tr class="table-tr-class">
+                <td class="table-td-class">Оплата :</td>
+                <td class="table-td-class table-value-cell"id = 'pay-cell'></td>
+            </tr>
+            <tr class="table-tr-class">
+                <td class="table-td-class">Кількість </td>
+                <td class="table-td-class table-value-cell"id = 'count-cell'></td>
+            </tr>
+            <tr class="table-tr-class">
+                <td class="table-td-class">Ваш коментар до замовлення </td>
+                <td class="table-td-class table-value-cell" id = 'comment-cell'></td>
+            </tr>
+            <tr class="table-tr-class">
+                <td class="table-td-class">Ви обрали фільм: </td>
+                <td class="table-td-class table-value-cell" id = 'choosen-film-cell'></td>
+            </tr>
+        </table>
     </main>
 
 
